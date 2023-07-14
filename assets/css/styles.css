@@ -66,7 +66,6 @@ ul {
 .navbar {
     display: flex;
     align-items: center;
-    /* padding-top: 38px; */
     padding: 12px 0;
 }
 
@@ -105,7 +104,7 @@ ul {
 
 .hero-wrap {
     background: #E6F0FF;
-    height: 100vh;
+    height: calc(100vh - 90px);
     position: relative;
 }
 
