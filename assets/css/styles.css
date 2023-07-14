@@ -55,16 +55,19 @@ ul {
 }
 
 /* =========== Header ============= */
-.header {
+.fixed-header {
     background: #E6F0FF;
-    height: 100vh;
-    position: relative;
+    position: sticky;
+    padding-top: 26px;
+    top: -26px;
+    z-index: 1;
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    /* padding-top: 38px; */
+    padding: 12px 0;
 }
 
 .navbar ul {
@@ -100,15 +103,21 @@ ul {
     margin-left: 18px;
 }
 
-.header .hero {
-    margin-top: 130px;
+.hero-wrap {
+    background: #E6F0FF;
+    height: 100vh;
+    position: relative;
 }
 
-.header .info {
+.hero {
+    padding-top: 130px;
+}
+
+.hero-wrap .info {
     width: 51%;
 }
 
-.hero .sub-title {
+.hero-wrap .sub-title {
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 1.5;
@@ -116,7 +125,7 @@ ul {
     color: #687690;
 }
 
-.hero .title {
+.hero-wrap .title {
     font-weight: 700;
     font-size: 6.2rem;
     line-height: 1.19;
@@ -124,7 +133,7 @@ ul {
     margin-top: 8px;
 }
 
-.hero .desc {
+.hero-wrap .desc {
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 1.78;
