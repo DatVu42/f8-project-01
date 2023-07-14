@@ -612,9 +612,27 @@ ul {
     white-space: normal;
 }
 
-.footer .social-link {
-    display: inline-block;
+.footer .social {
     margin-top: 40px;
+    display: flex;
+}
+
+.social .social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    background: #F9F9F9;
+    border-radius: 3px;
+}
+
+.social .social-link + .social-link {
+    margin-left: 16px;
+}
+
+.social .social-link:hover {
+    background: #ebebeb;
 }
 
 .footer .row-bottom {
